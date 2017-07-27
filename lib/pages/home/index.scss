@@ -1,0 +1,70 @@
+@import '../../sass/common.scss';
+
+.global_navs{
+    .icon_nav{
+        width: 28px;
+        height: 28px;
+        display: block;
+        margin-right: .7em;
+    }
+}
+
+.weui_grids {
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: '';
+        position: absolute;
+        box-sizing: border-box;
+        width: 200%;
+        height: 200%;
+        left: 0;
+        top: 0;
+        border: 1px solid #d9d9d9;
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5);
+    }
+    .weui_grid {
+        position: relative;
+        float: left;
+        padding: 0.5333333333333333rem 0.26666666666666666rem;
+        width: 33.33333333%;
+        box-sizing: border-box;
+        .weui_grid_icon{
+            width: 0.7466666666666667rem;
+            height: 0.7466666666666667rem;
+            margin: 0 auto;
+            img{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+        }
+
+        p.weui_grid_label{
+            display: block;
+            margin-top: 0.13333333333333333rem;
+            text-align: center;
+            color: #000;
+            @include font-dpr(14px);
+        }
+
+        &:before{
+            content: '';
+            position: absolute;
+            box-sizing: border-box;
+            width: 200%;
+            height: 200%;
+            left: 0;
+            top: 0;
+            border-bottom: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+            -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+            -webkit-transform: scale(.5);
+            transform: scale(.5);
+        }
+    }
+}
